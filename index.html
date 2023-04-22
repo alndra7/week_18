@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .hero {
+            background-color: rgb(197, 163, 231);
+            border-radius: 10px;
+            width: 30vw;
+            padding: 5px;
+        }
+        .img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="heroes-container" class="wrapper"></div>
+    <script src="./json_data.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
