@@ -23,24 +23,16 @@ document.addEventListener("DOMContentLoaded", function(){
         </div>`
     }
     document.getElementById("heroes-container").innerHTML = heroesContent;
-});
+    let ratingList = document.querySelectorAll('.rating')
 
+    ratingList.forEach((rating) => {
 
-document.addEventListener("DOMContentLoaded", function(event){
-
-    // document.querySelector('.rating').onclick = function(e) {
-    // let result = e.target.value;
-    // console.log (result);
-    // localStorage.setItem('rate', result);
-    // }
-    
-    let rating = document.querySelectorAll('.rating')
-    console.log(rating);
-    rating.forEach(() => {
-        document.querySelector('.rating').onclick = function(e) {
+        rating.onclick = function(e) {
             let result = e.target.value;
+            rateName = e.target.name;
             console.log (result);
-            localStorage.setItem('rate', result);
+            console.log (e.target.name);
+            localStorage.setItem(rateName, result);
             }  
     })
 });
